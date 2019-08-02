@@ -1,3 +1,7 @@
+<?php
+    $koneksi = mysqli_connect('localhost', 'root', '', 'batch');
+    $ambildata = mysqli_query($koneksi, 'SELECT * FROM data_karyawan');
+?>
 <!doctype html>
 
 <html lang="en">
@@ -15,7 +19,7 @@
 
 <!-- navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">Navbar</a>
+      <a class="navbar-brand" href="#">PT. SUKAMUNDUR</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -36,63 +40,25 @@
             <table class="table">
   <thead class="thead-dark">
     <tr>
-      <th scope="col">#</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
+      <th scope="col">Id Karyawan</th>
+      <th scope="col">Nama</th>
+      <th scope="col">Jabatan</th>
       <th scope="col">Action</th>
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
-    </tr>
-  </tbody>
-</table>
+    <?php 
+        while ($data = mysqli_fetch_assoc($ambildata)) {?>
+            <tr>
+                <td><?= $data['id']; ?></td>
+                <td><?= $data['nama']; ?></td>
+                <td><?= $data['jabatan']; ?></td>
+                <td><a href="" class="btn btn-primary">Details</a></td>
+            </tr>
+    <?php
+        }
+    ?>
 
-<table class="table">
-  <thead class="thead-light">
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
-    </tr>
   </tbody>
 </table>
             

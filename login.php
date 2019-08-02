@@ -24,7 +24,7 @@
 
 
     <div class="form-regist">
-        <div class="container col-md-4">
+        <div class="container col-md-12">
             <div class="row justify-content-between">
                 <div class="col-md-6 col-sm-6">
                 </div>
@@ -42,7 +42,7 @@
 
                     if(isset($_POST['btnlogin'])) {
                         if ($_POST['username'] == "sukamundur" && $_POST['password'] == 123456) {
-                            header("Location: index.php");
+                            header("Location: karyawan.php");
                         } else {
                             echo "<p class='text-danger text-center'>Login Gagal !!!</p>";
                         }
