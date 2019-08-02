@@ -29,24 +29,113 @@
     </nav>
 
 
-    <dir class="container">
+    <div class="container">
       <div class="row"> 
-          <div class="col-sm-12 md-12">
-            <h1> Slamat Datang Di PT.Sukamundur </h1>
+          <div class="col-sm-12 col-md-12">
+            <h1> Selamat Datang Di PT.Sukamundur  </h1>
+            <style>
+                h1 {
+                text-align: center;
+                }
+                </style>
           </div>
+        
       </div>
-      <dir class="row">
-          <div class="col-sm-6 md-6">
-            <pre> 
-                PT.SukaMaju bergerak di bidang ...
-            </pre>
+      <div class="row">
+          <div class="col-sm-8 md-8">
+            <p> 
+            <br>    
+            Kami Menjual: <br> FumeHood,Pagar Steinless Steel,MESIN BIO ETHANOL,MESH FILTER,FILTER AIR
+
+            PT.SukaMundur Jaya Engineering berdiri pada tanggal 3 Agustus 2001 yang diprakasai oleh 6 orang, 
+            dengan latar belakang sebagai pensiunan Pertamina, dimana mereka memiliki tekad, semangat dan visi yang sama, PT.SukaMaju Jaya Engineering adalah perusahaan yang bergerak dibidang Civil, Mechanical, Electrical, Mechatronic.Khususnya pembuatan alat-alat pengolahan limbah industri yang memakai bahan Steinless Steel.Kami terus berupaya untuk meningkatkan kualitas SDM, peralatan, 
+            serta mutu layanan yang mana merupakan factor yang sangat penting untuk perkembangan perusahaan kami.
+            </p>
+            <br>
+
+
+        <br>
           </div>
-          <div class="col-sm-6 md-6">
-            <!-- Form Login  -->
-            <h1>  Login</h1>
-          </div>
-      </dir>
-    </dir>
+          <div class="col-sm-4 md-4">
+                <!-- Form Login  -->
+                    <form>
+                        <div class="card">
+                            <div class="card-header">
+                                <ul class="nav nav-tabs card-header-tabs">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" href="#">Form Login</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="card-body">
+                                <div class="form">
+                                    <div class="form-group">
+                                        <label for="input1"></label>
+                                        <input type="text" class="form-control" id="Username" placeholder="Username">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="input2"></label>
+                                        <input type="Password" class="form-control" id="Password" placeholder="Password">
+                                    </div>
+                                </div>
+                                <br>
+                                <button id="button onclick" class="btn btn-primary btn-lg">Login</button>
+                            </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+
+        <!-- Footer Bar -->
+    <footer class="page-footer font-small indigo md-12 bg-dark">
+
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+    <!-- Grid column -->
+    <div class="col-md-12 mt-md-0 mt-3">
+
+    <!-- Content -->
+    <h5 class="text-uppercase">PT.SukaMundur Jaya</h5>
+        <p>Here you can use rows and columns here to organize your footer content.</p>
+    </div>
+        
+    <!-- Grid column -->
+        <hr class="clearfix w-100 d-md-none pb-3">
+
+    <!-- Grid column -->
+    <div class="col-md-3 mb-md-0 mb-3">
+        
+    </div>
+    <!-- Grid column -->
+
+    <!-- Grid column -->
+    <div class="col-md-3 mb-md-0 mb-3">
+    </div>
+
+    <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+    </div>
+    <!-- Footer Links -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2019 Copyright:
+        <a href="https://mdbootstrap.com/bootstrap-tutorial/">PT.SukaMundur Jaya</a>
+    </div>
+    <!-- Copyright -->
+
+    </footer>
+    <!-- Footer Bar -->
+
 
 
 
