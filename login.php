@@ -29,7 +29,7 @@
                 <div class="col-md-6 col-sm-6">
                 </div>
             </div>
-            <form>
+            <form method="post" action="">
                 <div class="card text-center">
                     <div class="card-header">
                         <ul class="nav nav-tabs card-header-tabs">
@@ -38,19 +38,29 @@
                             </li>
                         </ul>
                     </div>
+                    <?php
+
+                    if(isset($_POST['btnlogin'])) {
+                        if ($_POST['username'] == "sukamundur" && $_POST['password'] == 123456) {
+                            header("Location: index.php");
+                        } else {
+                            echo "<p class='text-danger text-center'>Login Gagal !!!</p>";
+                        }
+                    }
+                    ?>
                     <div class="card-body">
                         <div class="form">
                             <div class="form-group">
                                 <label for="input1"></label>
-                                <input type="text" class="form-control" id="Username" placeholder="Username">
+                                <input type="text" class="form-control" name="username" placeholder="Username">
                             </div>
                             <div class="form-group">
                                 <label for="input2"></label>
-                                <input type="Password" class="form-control" id="Password" placeholder="Password">
+                                <input type="Password" class="form-control" name="password" placeholder="Password">
                             </div>
                         </div>
                         <br>
-                        <button id="button onclick" class="btn btn-primary btn-lg">Login</button>
+                        <button type="submit" name="btnlogin" class="btn btn-primary btn-lg">Login</button>
                     </div>
             </form>
         </div>
